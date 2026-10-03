@@ -27,13 +27,6 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: MyResume
-  * Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
-  * Updated: Jun 29 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body class="index-page">
@@ -48,6 +41,7 @@
         <li><a href="#about"><i class="bi bi-person navicon"></i><span>About</span></a></li>
         <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i><span>Resume</span></a></li>
         <li><a href="#portfolio"><i class="bi bi-images navicon"></i><span>Portfolio</span></a></li>
+        <li><a href="#blog"><i class="bi bi-journal-text navicon"></i><span>Blog</span></a></li>
         <li><a href="#contact"><i class="bi bi-envelope navicon"></i><span>Contact</span></a></li>
       </ul>
     </nav>
@@ -310,6 +304,85 @@ will help me achieve my future academic and professional goals.</p>
       </div>
 
     </section><!-- /Portfolio Section -->
+
+    <!-- Blog Section -->
+    <section id="blog" class="blog section light-background">
+
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Blog</h2>
+        <p>Here are some of the experiences I have had.</p>
+      </div>
+
+      <div class="container">
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6 blog-card-column">
+            <article class="blog-card" data-aos="fade-up">
+              <button class="blog-card-toggle" type="button" aria-expanded="false" aria-controls="blog-experience-survey">
+                <span class="blog-card-number">01</span>
+                <span class="blog-card-heading">
+                  <span class="blog-card-title">Pinning DCP Points Through the Forest</span>
+                  <span class="blog-card-summary">My Internship at PT Kaltim Prima Coal</span>
+                </span>
+                <i class="bi bi-plus-circle blog-card-icon" aria-hidden="true"></i>
+              </button>
+              <div class="blog-card-details" id="blog-experience-survey" hidden>
+                <p> During my internship at PT Kaltim Prima Coal, I set out DCP (Dynamic Cone Penetrometer) points using the RTK method, deep inside the forest. It sounds simple on paper, but a thick canopy is a real test for GNSS. Satellite signals get blocked by leaves and branches, so I often had to wait for a stable fix or move to a more open spot before marking a point.</p>
+                <p>That experience taught me that surveying is not just about having good equipment. It takes patience, attention to detail, and the ability to adapt to the terrain. One accurate point can make the whole dataset reliable, and seeing that in real fieldwork made my geomatics classes feel a lot more alive.</p>
+                <div class="blog-card-gallery">
+                  <img src="assets/img/blog/KPC.jpeg" alt="KPC internship fieldwork">
+                  <img src="assets/img/blog/DCP.jpeg" alt="DCP point installation in the field">
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-lg-4 col-md-6 blog-card-column">
+            <article class="blog-card" data-aos="fade-up" data-aos-delay="100">
+              <button class="blog-card-toggle" type="button" aria-expanded="false" aria-controls="blog-experience-hydrographic">
+                <span class="blog-card-number">02</span>
+                <span class="blog-card-heading">
+                  <span class="blog-card-title">Searching for Sunken Containers</span>
+                  <span class="blog-card-summary">My Internship at PT Alur Pelayaran Barat Surabaya</span>
+                </span>
+                <i class="bi bi-plus-circle blog-card-icon" aria-hidden="true"></i>
+              </button>
+              <div class="blog-card-details" id="blog-experience-hydrographic" hidden>
+                <p>During my internship at PT Alur Pelayaran Barat Surabaya, I got the chance to run a hydrographic survey using Side Scan Sonar (SSS) to look for containers that had sunk in Tanjung Perak Port after a vessel went down. Instead of searching with our eyes, we "looked" at the seabed with sound, towing the sonar through the water and watching the seafloor image build up line by line. Spotting the shape of a container among all the seabed features felt like solving a puzzle underwater.</p>
+                <p>Back from the field, the work continued in Sonarwiz 7, where I processed and interpreted the data to pinpoint possible targets. This experience showed me that a hydrographic survey is not only about collecting data, but also about careful interpretation, because one small misreading could send a search team to the wrong place. It was a real reminder that what we learn in geomatics can help solve real problems on the water.</p>
+                <div class="blog-card-gallery">
+                  <img src="assets/img/blog/pelindo teara.jpeg" alt="Teara during the Pelindo internship">
+                  <img src="assets/img/blog/pemasangan SSS.jpeg" alt="Side Scan Sonar installation">
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-lg-4 col-md-6 blog-card-column">
+            <article class="blog-card" data-aos="fade-up" data-aos-delay="200">
+              <button class="blog-card-toggle" type="button" aria-expanded="false" aria-controls="blog-experience-mapping">
+                <span class="blog-card-number">03</span>
+                <span class="blog-card-heading">
+                  <span class="blog-card-title">Where Should the School Bus Stop?</span>
+                  <span class="blog-card-summary">A Field Camp Project in Surabaya</span>
+                </span>
+                <i class="bi bi-plus-circle blog-card-icon" aria-hidden="true"></i>
+              </button>
+              <div class="blog-card-details" id="blog-experience-mapping" hidden>
+                <p>For our field camp, my group researched where to place school bus stops in Surabaya. Instead of guessing, we scored locations using three parameters: Density, Diversity, and Design. Together they helped us pick spots that make sense for students, and the results became a set of recommended bus stop points across the city. To make the findings easy to explore, we also built an interactive WebGIS, so anyone can open the map, zoom in, and see where the recommended stops are and why.</p>
+                <p>Working on this project showed me that geomatics is not only about collecting data, but also about turning spatial data into decisions people can use. Seeing our analysis become a map that others can interact with was the most rewarding part, and a good reminder that a map is most useful when it is easy to understand.</p>
+                <div class="blog-card-gallery">
+                  <img src="assets/img/blog/sirubi.jpeg" alt="Sirubi field camp project">
+                  <img src="assets/img/blog/WEBGIS.png" alt="Interactive WebGIS project">
+                </div>
+              </div>
+            </article>
+          </div>
+
+        </div>
+      </div>
+
+    </section><!-- /Blog Section -->
 
     <!-- Contact Section -->
     <section id="contact" class="contact section">

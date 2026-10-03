@@ -858,6 +858,111 @@ section,
 }
 
 /*--------------------------------------------------------------
+# Blog Section
+--------------------------------------------------------------*/
+.blog .blog-card-column {
+  transition: flex-basis 0.35s ease, max-width 0.35s ease;
+}
+
+.blog .blog-card {
+  height: 100%;
+  overflow: hidden;
+  background: var(--surface-color);
+  border-radius: 8px;
+  box-shadow: 0 5px 25px color-mix(in srgb, var(--default-color), transparent 90%);
+}
+
+.blog .blog-card-toggle {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  width: 100%;
+  min-height: 150px;
+  padding: 28px;
+  border: 0;
+  background: transparent;
+  color: var(--default-color);
+  text-align: left;
+  cursor: pointer;
+}
+
+.blog .blog-card-toggle:focus-visible {
+  outline: 3px solid var(--accent-color);
+  outline-offset: -3px;
+}
+
+.blog .blog-card-number {
+  color: var(--accent-color);
+  font-family: var(--heading-font);
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.blog .blog-card-heading {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.blog .blog-card-title {
+  color: var(--heading-color);
+  font-family: var(--heading-font);
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.blog .blog-card-summary {
+  color: color-mix(in srgb, var(--default-color), transparent 25%);
+  font-size: 14px;
+}
+
+.blog .blog-card-icon {
+  color: var(--accent-color);
+  font-size: 24px;
+  transition: transform 0.3s ease;
+}
+
+.blog .blog-card-toggle[aria-expanded="true"] .blog-card-icon {
+  transform: rotate(45deg);
+}
+
+.blog .blog-card-details {
+  padding: 0 28px 28px;
+}
+
+.blog .blog-card-details p {
+  line-height: 1.7;
+}
+
+.blog .blog-card-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.blog .blog-card-gallery img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  object-fit: contain;
+}
+
+@media (max-width: 575px) {
+  .blog .blog-card-gallery {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+.blog .blog-card-column.blog-card-expanded {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+/*--------------------------------------------------------------
 # Services Section
 --------------------------------------------------------------*/
 .services .service-item {

@@ -34,6 +34,21 @@
   });
 
   /**
+   * Expand blog experience cards
+   */
+  document.querySelectorAll('.blog-card-toggle').forEach(toggle => {
+    const details = document.getElementById(toggle.getAttribute('aria-controls'));
+    const column = toggle.closest('.blog-card-column');
+
+    toggle.addEventListener('click', () => {
+      const isExpanded = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', String(!isExpanded));
+      details.hidden = isExpanded;
+      column.classList.toggle('blog-card-expanded', !isExpanded);
+    });
+  });
+
+  /**
    * Toggle mobile nav dropdowns
    */
   document.querySelectorAll('.navmenu .toggle-dropdown').forEach(navmenu => {
